@@ -1,7 +1,7 @@
 # DUT Info2 - FilmProvider
 
-### NOM : DOE
-### Prénom : John
+### NOM : COMBALBERT
+### Prénom : Pierre-Marie
 ### Groupe de TP : 
 - [x] 1
 
@@ -11,10 +11,10 @@ Créez un compte sur la plateforme Github si ce n'est pas déjà fait.
 Vérifiez votre configuration Git locale. 
 Rappel pour configurer Git lors d’un premier usage sur une machine de travail :
 
-    git config --global user.name "Your Username"
-    git config --global user.email "Your email"
+    git config --global user.name "Yamkido"
+    git config --global user.email "pierremarie.combalbert@iut-rodez.fr"
     git config --global color.ui "auto"
-	git config —-global http.proxy "http://cache.iut-rodez.fr:8080"
+	git config --global http.proxy "http://cache.iut-rodez.fr:8080"
     git config --global -l
 
 Créez votre projet sur Github en vous inscrivant au devoir indiqué par votre enseignant.  
