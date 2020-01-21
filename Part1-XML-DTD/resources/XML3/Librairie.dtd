@@ -1,0 +1,23 @@
+<!ELEMENT img EMPTY>
+<!ATTLIST img src CDATA #REQUIRED>
+<!ATTLIST image title CDATA #IMPLIED>
+
+<!ELEMENT em (#PCDATA)>
+<!ELEMENT strong (#PCDATA)>
+<!ELEMENT text (img*,em*,strong*) (#PCDATA)>
+<!ELEMENT entete (text)>
+
+<!ELEMENT titre >
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT auteur (prenom,nom)>
+<!ELEMENT direction >
+<!ELEMENT membres >
+<!ELEMENT auteurs (auteur+|direction,membres)>
+<!ELEMENT description >
+<!ELEMENT prix >
+<!ATTLIST livre numeroIsbn CDATA #REQUIRED>
+<!ELEMENT livre (titre,auteurs+,description,prix)>
+
+<!ELEMENT site (entete+,livre+)>
+
