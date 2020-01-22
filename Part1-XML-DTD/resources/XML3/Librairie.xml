@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE site SYSTEM "Librairie.dtd">
+<site>
+    <entete>
+        <text>La super librairie
+            <img src="jesaispas"></img>
+            <strong> qui test la dtd</strong>
+            <em> je suis barré</em> &copyright;
+        </text>
+    </entete>
+    <livre numeroIsbn="">
+        <titre></titre>
+        <auteurs>
+            <auteur>
+
+            </auteur>
+        </auteurs>
+        <description></description>
+        <prix devise="dollar" tva="5.5" type="TTC">Chocapic</prix>
+    </livre>
+
+</site>

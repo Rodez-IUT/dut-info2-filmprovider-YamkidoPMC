@@ -1,5 +1,6 @@
-<!ENTITY % identite "SYSTEM (prenom?,nom)">
-<!ENTITY % texte "SYSTEM (img*,em*,strong*,#PCDATA)+">
+<!ENTITY % identite "(prenom?,nom)">
+<!ENTITY % texte "(img*,em*,strong*,#PCDATA)+">
+<!ENTITY copyright "©Librairie & Internet 2020">
 
 <!ELEMENT img EMPTY>
 <!ATTLIST img src CDATA #REQUIRED>
@@ -9,7 +10,7 @@
 <!ELEMENT strong (#PCDATA)>
 <!ELEMENT text (%texte;)>
 <!ELEMENT entete (text)>
-<!ELEMENT copyright #FIXED "©Librairie & Internet 2020">
+
 <!ELEMENT titre (#PCDATA)>
 <!ELEMENT prenom (#PCDATA)>
 <!ELEMENT nom (#PCDATA)>
@@ -19,14 +20,16 @@
 
 
 
-<!ELEMENT auteurs (auteur+|direction,membres)>
+<!ELEMENT auteurs (auteur+|(direction,membres))>
 <!ELEMENT description (%texte;)>
-<!ELEMENT prix (#PCDATA)>
-<!ATTLIST prix tva #FIXED "5.5">
-<!ATTLIST prix devise ("euro"|"dollar"|"livre") "euro">
-<!ATTLIST prix type ("HT"|"TTC") "HT">
-<!ATTLIST livre numeroIsbn ID #REQUIRED>
-<!ELEMENT livre (titre,auteurs+,description,prix)>
 
-<!ELEMENT site (entete+,livre+)>
+<!ELEMENT prix (#PCDATA)>
+<!ATTLIST prix tva #FIXED "5.5" #REQUIRED>
+<!ATTLIST prix devise (euro|dollar|livre) "euro" #REQUIRED>
+<!ATTLIST prix type (HT|TTC) "HT" #REQUIRED>
+
+<!ATTLIST livre numeroIsbn ID #REQUIRED>
+<!ELEMENT livre (titre,auteurs,description,prix)>
+
+<!ELEMENT site (entete,livre+)>
 
