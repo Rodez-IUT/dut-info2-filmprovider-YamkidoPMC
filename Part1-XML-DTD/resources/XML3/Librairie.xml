@@ -12,8 +12,13 @@
         <titre></titre>
         <auteurs>
             <auteur>
+                <prenom></prenom>
+                <nom></nom>
+            </auteur>
+            <auteur>
 
             </auteur>
+            <direction></direction>
         </auteurs>
         <description></description>
         <prix devise="dollar" tva="5.5" type="TTC">Chocapic</prix>
