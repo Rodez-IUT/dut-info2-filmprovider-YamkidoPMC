@@ -9,17 +9,17 @@
         </text>
     </entete>
     <livre numeroIsbn="E01">
-        <titre></titre>
+        <titre>Les retards de yanis</titre>
             <auteur>
-                <prenom></prenom>
-                <nom></nom>
+                <prenom>Pierre</prenom>
+                <nom>Comb</nom>
             </auteur>
             <auteur>
-                <prenom></prenom>
-                <nom></nom>
+                <prenom>test</prenom>
+                <nom>ui</nom>
             </auteur>
         <description>
-
+            Wtf les amis
         </description>
         <prix devise="dollar" tva="5.5" type="TTC">Chocapic</prix>
     </livre>
