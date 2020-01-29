@@ -1,0 +1,7 @@
+Ex1
+
+1 - /films/film/titre - //titre
+
+2 - //film[titre='Minority Report']/resume/text
+
+3 -
