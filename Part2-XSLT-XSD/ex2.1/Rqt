@@ -4,4 +4,16 @@ Ex1
 
 2 - //film[titre='Minority Report']/resume/text
 
-3 -
+3 - /films/realisateur[last()]/nom
+
+4 - /films/film[position()=2]/titre
+
+5 - /films/film/resume[contains(text,"mafia")]/ancestor::film[position()]
+
+6 - films/film/resume/image/ancestor::film/titre
+
+7 - /films/film[@id_realisateur = 'real_01']/@annee
+
+8 - count(/films/film[@annee = '2003'])
+
+
