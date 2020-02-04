@@ -22,7 +22,7 @@
         </html>
     </xsl:template>
     <xsl:template match="film">
-        <xsl:variable name="real" select="/@id_realisateur"/>
+        <xsl:variable name="real" select="@id_realisateur"/>
         <tr>
             <td><xsl:value-of select="titre"/></td>
             <td><xsl:value-of select="resume/text"/></td>
