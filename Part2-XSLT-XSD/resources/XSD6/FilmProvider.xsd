@@ -34,6 +34,7 @@
                 <xs:element name="prenom" type="xs:string"/>
                 <xs:element name="nom" type="xs:string"/>
             </xs:sequence>
+            <xs:attribute name="id_real" type="xs:ID" />
         </xs:complexType>
     </xs:element>
 </xs:schema>
