@@ -26,15 +26,32 @@
                     <i> (<xsl:value-of select="/films/realisateur[@id_realisateur=$real]/prenom"/>&#160;,
                         <xsl:value-of select="/films/realisateur[@id_realisateur=$real]/nom"/>)</i>
                 </td>
-                <td>
+            </tr>
+            <tr>
+                <xsl:variable name="image" select="resume/image/@source"/>
+                <xsl:choose>
+                    <xsl:when test="$image!= ''">
+                        <td>
+                            <xsl:element name="img">
+                                <xsl:attribute name="src"><xsl:value-of select="resume/image/@source"/></xsl:attribute>
+                            </xsl:element>
+                        </td>
+                    </xsl:when>
+                </xsl:choose>
 
-                    <xsl:element name="img">
-                        <xsl:attribute name="src"><xsl:value-of select="resume/image/@source"/> </xsl:attribute>
-                    </xsl:element>
-                </td>
-                <td colspan="2">
-                    <xsl:value-of select="resume/text"/>
-                </td>
+
+                <xsl:choose>
+                    <xsl:when test="$image = ''">
+                        <td colspan="2">
+                            <xsl:value-of select="resume/text"/>
+                        </td>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <td>
+                            <xsl:value-of select="resume/text"/>
+                        </td>
+                    </xsl:otherwise>
+                </xsl:choose>
             </tr>
         </table>
     </xsl:template>
